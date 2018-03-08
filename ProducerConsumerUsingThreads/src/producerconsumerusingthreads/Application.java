@@ -12,12 +12,10 @@ public class Application {
     public static void main(String[] args) throws InterruptedException{
         int size = 10;
         ReentrantLock lock = new ReentrantLock();
-       //consumer.join();
-       //producer.join();
-       Producer producer = new Producer(lock,queue, size);
-       Consumer consumer = new Consumer(queue,lock);
-       new Thread(producer).start();
-       new Thread(consumer).start();     
+        Producer producer = new Producer(lock,queue, size);
+        Consumer consumer = new Consumer(queue,lock);
+        new Thread(producer).start();
+        new Thread(consumer).start();     
        
         new Thread(producer).join();
         new Thread(consumer).join(); 
