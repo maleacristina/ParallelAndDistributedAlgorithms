@@ -5,7 +5,6 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.Queue;
 import java.util.Random;
-import java.util.concurrent.locks.ReentrantLock;
 
 public class Producer implements Runnable {
     ReentrantLock lock;
@@ -24,11 +23,13 @@ public class Producer implements Runnable {
 
         while(true) {
 
-            while (queue.size() < size) {
+            if (queue.size() < size) {
                 lock.lock();
-                System.out.println(" The producer products a product:" + Random());
+                System.out.println("The producer products a product:" + Random());
                 queue.add(Random());
                 lock.unlock();
+            }
+             else{    
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {

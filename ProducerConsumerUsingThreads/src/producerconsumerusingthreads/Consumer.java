@@ -21,11 +21,13 @@ public class Consumer implements Runnable {
 
         while(true) {
 
-            while (queue.size() > 0) {
+            if (queue.size() > 0) {
                 lock.lock();
                 System.out.println("The consumer consumes a product:" + Random());
                 queue.remove();
-                lock.unlock();               
+                lock.unlock();
+            }
+            else{    
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
