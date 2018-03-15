@@ -31,7 +31,8 @@ public class Producer extends Thread {
              try {
                 synchronized (lock) {
                     semFree.acquire();
-                    System.out.println("Produced value " + list.add(counter++));
+                    System.out.println("The producer produces:");
+                    list.add(counter++);
                     semFull.release();
                 }
             } catch (InterruptedException e) {

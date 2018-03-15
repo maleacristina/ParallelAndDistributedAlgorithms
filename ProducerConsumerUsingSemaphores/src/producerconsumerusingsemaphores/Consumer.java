@@ -32,7 +32,7 @@ public class Consumer extends Thread {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println("Consumed " + counter);
+            System.out.println("The consumer consums: " + counter);
             try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {
