@@ -18,7 +18,7 @@ public class Main
             for(int k = 1; k < PROCESSORS_NUMBER; k ++) {
                 vector1[0] = (int) ((float) (k * Vector.length - k) / PROCESSORS_NUMBER) + 1;
                 vector1[1] = (int) ((float) ((k + 1) * Vector.length - (k + 1)) / PROCESSORS_NUMBER);
-                MPI.COMM_WORLD.Send(vector1,0,2, MPI.INT, k,0);
+                MPI.COMM_WORLD.Send(vector1, 0, 2, MPI.INT, k, 0);
             }
             int i,j;
             i = 0;
