@@ -10,11 +10,11 @@ public class Main {
     public static void main(String[] args) {
         MPI.Init(args);
         int[][] Array = new int[][]{
-                {0, 2, INF, 10, INF},
-                {2, 0, 3, INF, INF},
-                {INF, 3, 0, 1, 8},
-                {10, INF, 1, 0, INF},
-                {INF, INF, 8, INF, 0}
+                {0,   2, INF, 10,  INF},
+                {2,   0,  3,  INF, INF},
+                {INF, 3,  0,   1,   8},
+                {10, INF, 1,   0,  INF},
+                {INF, INF,8,  INF,  0}
         };
         int[][] resultArray = new int[ARRAY_LENGTH][ARRAY_LENGTH];
         int rank = MPI.COMM_WORLD.Rank();
@@ -48,7 +48,6 @@ public class Main {
                 System.out.println();
             }
         }
-
         MPI.Finalize();
     }
 }
