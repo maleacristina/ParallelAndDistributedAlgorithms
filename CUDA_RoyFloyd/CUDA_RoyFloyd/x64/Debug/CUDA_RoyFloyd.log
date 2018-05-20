@@ -1,0 +1,36 @@
+﻿Build started 5/17/2018 15:20:02.
+     1>Project "C:\Users\Asus\Desktop\CUDA_RoyFloyd\CUDA_RoyFloyd\CUDA_RoyFloyd.vcxproj" on node 2 (Rebuild target(s)).
+     1>CudaClean:
+         cmd.exe /C "C:\Users\Asus\AppData\Local\Temp\tmpe8acef020bce4061a410cb6d88d6bd55.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile   -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\Asus\Desktop\CUDA_RoyFloyd\CUDA_RoyFloyd\kernel.cu" -clean
+         
+         C:\Users\Asus\Desktop\CUDA_RoyFloyd\CUDA_RoyFloyd>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile   -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\Asus\Desktop\CUDA_RoyFloyd\CUDA_RoyFloyd\kernel.cu" -clean 
+         kernel.cu
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DWIN64 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" /I. /FIcuda_runtime.h /c C:\Users\Asus\Desktop\CUDA_RoyFloyd\CUDA_RoyFloyd\kernel.cu 
+     1>Project "C:\Users\Asus\Desktop\CUDA_RoyFloyd\CUDA_RoyFloyd\CUDA_RoyFloyd.vcxproj" (1) is building "C:\Users\Asus\Desktop\CUDA_RoyFloyd\CUDA_RoyFloyd\CUDA_RoyFloyd.vcxproj" (1:2) on node 2 (CudaBuildCore target(s)).
+     1>CudaBuildCore:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\Asus\AppData\Local\Temp\tmp08d760609da74deba38be19a852e0dae.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\Asus\Desktop\CUDA_RoyFloyd\CUDA_RoyFloyd\kernel.cu"
+         
+         C:\Users\Asus\Desktop\CUDA_RoyFloyd\CUDA_RoyFloyd>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\Asus\Desktop\CUDA_RoyFloyd\CUDA_RoyFloyd\kernel.cu" 
+     1>C:/Users/Asus/Desktop/CUDA_RoyFloyd/CUDA_RoyFloyd/kernel.cu(34): error : "k" has already been declared in the current scope
+     1>C:/Users/Asus/Desktop/CUDA_RoyFloyd/CUDA_RoyFloyd/kernel.cu(38): error : expected an expression
+     1>C:/Users/Asus/Desktop/CUDA_RoyFloyd/CUDA_RoyFloyd/kernel.cu(40): error : no operator "<" matches these operands
+     1>C:/Users/Asus/Desktop/CUDA_RoyFloyd/CUDA_RoyFloyd/kernel.cu(42): error : no operator "<" matches these operands
+     1>C:/Users/Asus/Desktop/CUDA_RoyFloyd/CUDA_RoyFloyd/kernel.cu(43): error : identifier "A" is undefined
+     1>C:/Users/Asus/Desktop/CUDA_RoyFloyd/CUDA_RoyFloyd/kernel.cu(92): warning : variable "N" is used before its value is set
+     1>C:/Users/Asus/Desktop/CUDA_RoyFloyd/CUDA_RoyFloyd/kernel.cu(94): error : "size" has already been declared in the current scope
+     1>C:/Users/Asus/Desktop/CUDA_RoyFloyd/CUDA_RoyFloyd/kernel.cu(101): error : expected a ")"
+     1>C:/Users/Asus/Desktop/CUDA_RoyFloyd/CUDA_RoyFloyd/kernel.cu(101): error : expected an expression
+     1>C:/Users/Asus/Desktop/CUDA_RoyFloyd/CUDA_RoyFloyd/kernel.cu(101): error : expected an expression
+     1>C:/Users/Asus/Desktop/CUDA_RoyFloyd/CUDA_RoyFloyd/kernel.cu(104): error : identifier "k" is undefined
+         kernel.cu
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\BuildCustomizations\CUDA 9.1.targets(707,9): error MSB3721: The command ""C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\Asus\Desktop\CUDA_RoyFloyd\CUDA_RoyFloyd\kernel.cu"" exited with code 1.
+     1>Done Building Project "C:\Users\Asus\Desktop\CUDA_RoyFloyd\CUDA_RoyFloyd\CUDA_RoyFloyd.vcxproj" (CudaBuildCore target(s)) -- FAILED.
+     1>Done Building Project "C:\Users\Asus\Desktop\CUDA_RoyFloyd\CUDA_RoyFloyd\CUDA_RoyFloyd.vcxproj" (Rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.27
